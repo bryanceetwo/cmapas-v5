@@ -1,0 +1,113 @@
+/* COLUMNAS TRAMITES Y SERVICIOS */
+#tys {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: #33564C;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#col-tys {
+    display: flex;
+    justify-content: center;
+}
+
+#col-tys>#card-style {
+    height: 12rem;
+    width: 18rem;
+    text-decoration: none;
+}
+
+#col-tys>#card-style:hover {
+    background-color: #B38E5D;
+    color: aliceblue;
+}
+
+.icono-card {
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    right: 50;
+}
+
+.icono-card > img{
+    width: 56px;
+}
+
+#col-tys>#card-style>div>h5 {
+    color: #9D2449;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+#col-tys>#card-style>div>a {
+    background-color: #9D2449;
+    border-color: unset;
+    border-radius: 20px;
+}
+
+/* ESTILO MODALES */
+.info-modal {
+    width: 600px;
+}
+
+#modal-info {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.title-modal {
+    color: #B38E5D;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nota-title {
+    text-align: center;
+}
+
+#footer-modal {
+    background-image: url(../assets/footer/banner.png);
+    background-size: cover;
+}
+
+#nota-text {
+    text-align: center;
+}
+
+#horario-atencion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#horario-atencion-fecha {
+    font-weight: bold;
+}
+
+ul {
+    text-align: justify;
+}
+
+#container-cards{
+    margin-top: 50px;
+}
+
+/* CHATBOT */
+#cmapas-bot{
+    z-index: 3;
+}
+
+#navbar-cmapas{
+    z-index: 4;
+}
+
+.offcanvas-body{
+    z-index: 2;
+}

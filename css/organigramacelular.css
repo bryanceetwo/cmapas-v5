@@ -1,0 +1,177 @@
+.organigrama-pc{
+    display:flex;
+}
+
+.organigrama-celular{
+    display: none;
+}
+
+.footer-organigrama-pc{
+    display: block;
+}
+
+.footer-organigrama-movil{
+    display:none;
+}
+
+/* CONSEJO DIRECTIVO */
+#consejo-directivos {
+	content: ' ';
+	background: url(../assets/quienes-somos/organigrama/o1.png) center no-repeat;
+	height: 150px;
+	width: 130px;
+	background-size: contain;
+}
+
+#consejo-directivos:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o1cd.png) center no-repeat;
+}
+
+/* GERENCIA GENERAL */
+#gerencia-generals {
+	content: ' ';
+	background: transparent url(../assets/quienes-somos/organigrama/o2.jpg) center no-repeat;
+	height: 150px;
+	width: 130px;
+}
+
+#gerencia-generals:hover {
+	background: transparent url(../assets/quienes-somos/organigrama/hover/o22.png) center no-repeat;
+
+}
+
+
+
+/* COORDINADOR SISTEMAS GESTION */
+#coordinador-sistemas-gestions {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o4.jpg) center no-repeat;
+	width: 200px;
+	height: 50px;
+}
+
+/* ASESORIA EXTERNA */
+#asesoria-externas {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o5.jpg) center no-repeat;
+	width: 200px;
+	height: 50px;
+}
+
+/* GERENCIA COMERCIAL */
+#gerencia-comercials {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o6.jpg) center no-repeat;
+	width: 200px;
+	height: 120px;
+}
+
+#gerencia-comercials:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o66.png) center no-repeat;
+}
+
+/* GERENCIA ADMINISTRATIVA */
+#gerencia-administrativas {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o7.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-administrativas:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o77.png) center no-repeat;
+}
+
+/* GERENCIA ALCANTARILLADO */
+#gerencia-alcantarillados {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o8.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-alcantarillados:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o88.png) center no-repeat;
+}
+
+/* GERENCIA AGUA POTABLE */
+#gerencia-agua-potables {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o9.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-agua-potables:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o99.png) center no-repeat;
+}
+
+/* GERENCIA JURIDICA */
+#gerencia-juridicas {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o10.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-juridicas:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o100.png) center no-repeat;
+}
+
+/* GERENCIA INGENERIA PROYECTOS */
+#gerencia-ing-proyectos {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o11.jpg) center no-repeat;
+	width: 150px;
+	height: 140px;
+}
+
+#gerencia-ing-proyectos:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o111.png) center no-repeat;
+}
+
+/* GERENCIA CALIDAD AGUA */
+#gerencia-calidad-aguas {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o12.jpg) center no-repeat;
+	width: 150px;
+	height: 130px;
+}
+
+#gerencia-calidad-aguas:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o122.png) center no-repeat;
+}
+
+/* GERENCIA MANTENIMIENTO */
+#gerencia-mantenimientos {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o13.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-mantenimientos:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o133.png) center no-repeat;
+}
+
+
+
+@media screen and (max-width: 778px){
+	.organigrama-pc{
+		display:none;
+	}
+
+    .organigrama-celular{
+        display: flex;
+    }
+
+    .footer-organigrama-pc{
+        display: none;
+    }
+
+    .footer-organigrama-movil{
+        display:block;
+    }
+
+}
+

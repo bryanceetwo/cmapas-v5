@@ -1,0 +1,90 @@
+.transparencia-banner {
+  background: transparent url(../assets/transparencia/banner.jpg) center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.row{
+  justify-content: space-around;
+}
+
+h1{
+  color: #33564C;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+.card{
+  display: flex;
+  width: 10rem;
+  align-items: center;
+}
+
+.card > img{
+  width: 82px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card-text-trans{
+  background-color: white; 
+  text-align: justify;
+}
+
+.card-footer{
+  display: none;
+}
+
+@media screen and (max-width:1200px){
+  .card-footer{
+    display: block;
+    
+  }
+  
+  .container-iconos > div > a{
+    text-decoration: none;
+
+  }
+}
+
+/* SLIDER LOGOS */
+.slider {
+  width: auto;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track{
+  display: flex;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
+  width: calc(100px * 7);
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.slider .slide{
+  width: auto;
+}
+
+.slider .slide img{
+  width: auto;
+  height: 60px;
+  margin-right: 10px;
+}
+
+@keyframes scroll{
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+      -webkit-transform: translateX(calc(-205px * 4));
+      transform: translateX(calc(-205px * 4));
+  }
+}

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link de bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- link de css -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/quienesSomos.css">
+  <link rel="icon" href="./assets/LOGO-CMAPAS.png">
+  <!-- ICONOS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>Inicio | CMAPAS</title>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <a class="navbar-brand logo-navbar w-100" id="logo-desk" href="./"><img src="./assets/LOGO-CMAPAS.png" class="d-block m-auto pt-3" id="logo-navbar"></a>
+  <a class="fixed-top" style="visibility: hidden;" id="logo-scroll" href="./"><img src="./assets/LOGO-CMAPAS.png" style="width: 60px;"></a>
+  <nav class="navbar sticky-top navbar-cmapas" id="navbar-cmapas">
+    <div class="container-fluid" id="container-nav">
+      <a class="navbar-brand logo-navbar" id="aparecer" href="./"><img src="./assets/LOGO-CMAPAS.png" id="logo-navbar"></a>
+      <div class="navbar-desktop">
+        <ul class="navbar-nav navbar-desktop-items">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 
+    0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 
+    0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 
+    0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 
+    0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+              </svg>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+            </svg>¿Quiénes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 
+    0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 
+    0 1-4.492 0z" />
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 
+    0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 
+    0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 
+    0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 
+    0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 
+    1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 
+    .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 
+    1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 
+    1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 
+    1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 
+    1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 
+    1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 
+    1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 
+    1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 
+    1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 
+    1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 
+    1.873 0 0 0 2.692-1.115l.094-.319z" />
+              </svg>Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+              <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
+  9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
+  5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
+  7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
+  1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
+  0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
+  1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
+            </svg>Obras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/transparencia/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+              <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+            </svg>Transparencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler boton-navbar" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="./assets/LOGO-CMAPAS.png"
+              id="logo-navbar"></h5>
+          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 
+            0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 
+            0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 
+            0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 
+            0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                </svg>Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+              </svg>¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 
+            0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 
+            0 1-4.492 0z" />
+                  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 
+            0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 
+            0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 
+            0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 
+            0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 
+            1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 
+            .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 
+            1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 
+            1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 
+            1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 
+            1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 
+            1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 
+            1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 
+            1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 
+            1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 
+            1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 
+            1.873 0 0 0 2.692-1.115l.094-.319z" />
+                </svg>Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
+    9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
+    5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
+    7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
+    1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
+    0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
+    1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
+              </svg>Obras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/transparencia/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+              </svg> Transparencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CARRUSEL PRINCIAPAL -->
+  <div id="carouselquienessomos" class="carousel slide carousel-container">
+    <div class="carousel-indicators" id="carousel-imgs">
+      <img src="./assets/index/carousel/banner-1.jpg" type="button" data-bs-target="#carouselquienessomos"
+        data-bs-slide-to="0" class="active rounded-2" aria-current="true" aria-label="Slide 1">
+      <img src="./assets/index/carousel/banner-2.jpg" type="button" data-bs-target="#carouselquienessomos"
+        data-bs-slide-to="1" class="rounded-2" aria-label="Slide 2">
+      <img src="./assets/index/carousel/banner-3.jpg" type="button" data-bs-target="#carouselquienessomos"
+        data-bs-slide-to="2" class="rounded-2" aria-label="Slide 3">
+    </div>
+    <div class="carousel-inner" id="carousel-container-imgs">
+      <div class="carousel-item active" id="carousel-img">
+        <img src="./assets/index/carousel/banner-1.jpg" class="d-block w-auto m-auto" alt="...">
+      </div>
+      <div class="carousel-item" id="carousel-img">
+        <img src="./assets/index/carousel/banner-2.jpg" class="d-block w-auto m-auto" alt="...">
+      </div>
+      <div class="carousel-item" id="carousel-img">
+        <img src="./assets/index/carousel/banner-3.jpg" class="d-block w-auto m-auto" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="cert">
+    <img src="assets/iso_b.png" alt="">
+  </div>
+
+  <div class="container-fluid position-sticky z-2" id="container-cd-gg">
+    <div class="row">
+      <div class="col-xxl-6" id="img-noticias"></div>
+      <div class="col-xxl-6" id="info-noticias">
+        <h3 id="noticias-titulo">NOTICIAS</h3>
+        <div class="noticia-principal">
+          <p>
+            CMAPAS presenta una gran respuesta por 
+            la ciudadanía para el descuento de pago por el 
+            servicio, apoya a las personas adultas y con 
+            discapacidad con descuentos del 20%...
+          </p>
+        </div>
+        <button type="button" class="btn modal-cult-agua" data-bs-toggle="modal" data-bs-target="#noticia-princ">
+          CONOCER MÁS..
+        </button>
+      </div>
+      <div class="col-xxl-6" id="img-noticias-resp">
+        <br><br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xxl-6" id="info-noticias-agua">
+        <img src="./assets/index/cultura-agua/cultura-agua.png" id="logo-cultura-agua">
+        <p id="texto-cultura-agua">
+          <strong>TE INVITAMOS A SER EMBAJADOR DE CMAPAS Y CONVERTIRTE GUARDIÁN DEL AGUA</strong><br><br>
+          El programa de Cultura del Agua del Comité Municipal
+          de Agua Potable y Alcantarillado de Salamanca, se creó
+          en 1996 con el objetivo de crear conciencia del uso
+          eficiente del vital líquido.
+        </p>
+        <button type="button" class="btn modal-cult-agua" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          CONOCER MÁS..
+        </button>
+      </div>
+      <div class="col-xxl-6" id="img-cultura-agua"></div>
+      <div class="col-xxl-6" id="img-cultura-agua-resp">
+        <br><br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+  </div>
+  <!-- LICITACIONES -->
+  <div class="cont-licitaciones">
+    <div class="licitacion-titulo">
+          <h1>LICITACIONES</h1>
+    </div>
+    <div class="licitacion-archivo">
+      <div class="archivo">
+        <a href="./assets/index/documents/cmapas-convocatoria.pdf"><img src="./assets/index/licitacion.png"
+            alt="">CMAPAS/ADQ/LPN/2022-05.</a>
+      </div>
+      <div class="archivo">
+        <a href="./assets/index/documents/licitacion-servicio-de-seguridad-proteccion-y-vigilancia-22.pdf"><img
+            src="./assets/index/licitacion.png" alt="">CMAPAS/ADQ/LPN/2022-06.</a>
+      </div>
+      <div class="archivo">
+        <a href="./assets/index/documents/licitación--cmapas-171122.pdf"><img src="./assets/index/licitacion.png"
+            alt="">CMAPAS/ADQ/LPN/2022-05
+          Suministro e Instalación de
+          Equipos Dataloggers</a>
+      </div>
+      <div class="archivo">
+        <a href="./assets/index/documents/licitacion-segunda-convocatoria.pdf"><img src="./assets/index/licitacion.png"
+            alt=""><br>
+          2da.
+          Licitación CMAPAS/SERV/LPN/2022-06</a>
+      </div>
+      <div class="archivo">
+        <a href="./assets/index/documents/20230419115619.pdf"><img src="./assets/index/licitacion.png"
+            alt="">CMAPAS/ADQ/LPN/2023-01
+          Adquisición de Plomería para la
+          Reparación de Fugas
+          e instalación de Tomas
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- REDES SOCIALES PARA ESCRITORIO-->
+  <div class="noticias-redes" id="noticias-redes-pc">
+    <div class="noticias-redes-titulo">
+      <h1>REDES SOCIALES</h1>
+    </div>
+    <div class="noticias-redes-cards">
+      <div class="redes-card">
+        <h5><i class="bi bi-facebook"></i>Facebook</h5>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPorAmorAlAguaTodosUnidos&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+
+      <div class="redes-card">
+        <h5><i class="bi bi-instagram"></i>Instagram</h5>
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="https://www.instagram.com/p/Ctb1SG6OoTR/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-version="14"
+          style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+          <div style="padding:16px;"> <a
+              href="https://www.instagram.com/p/Ctb1SG6OoTR/?utm_source=ig_embed&amp;utm_campaign=loading"
+              style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+              target="_blank">
+              <div style=" display: flex; flex-direction: row; align-items: center;">
+                <div
+                  style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                </div>
+                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                  <div
+                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                  </div>
+                  <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 19% 0;"></div>
+              <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                  viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                  xmlns:xlink="https://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                      <g>
+                        <path
+                          d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg></div>
+              <div style="padding-top: 8px;">
+                <div
+                  style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                  Ver esta publicación en Instagram</div>
+              </div>
+              <div style="padding: 12.5% 0;"></div>
+              <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                <div>
+                  <div
+                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                  </div>
+                  <div
+                    style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                  </div>
+                  <div
+                    style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                  </div>
+                </div>
+                <div style="margin-left: 8px;">
+                  <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                  </div>
+                  <div
+                    style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                  </div>
+                </div>
+                <div style="margin-left: auto;">
+                  <div
+                    style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                  </div>
+                  <div
+                    style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                  </div>
+                  <div
+                    style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                  </div>
+                </div>
+              </div>
+              <div
+                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                <div
+                  style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                </div>
+                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                </div>
+              </div>
+            </a>
+            <p
+              style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+              <a href="https://www.instagram.com/p/Ctb1SG6OoTR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                target="_blank">Una publicación compartida por Cmapas Salamanca (@cmapas_salamanca)</a></p>
+          </div>
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>
+
+      <div class="redes-card">
+        <h5><i class="bi bi-twitter"></i>Twitter</h5>
+        <a class="twitter-timeline" data-lang="es" data-width="340" data-height="500" data-theme="light"
+          href="https://twitter.com/CMAPASsalamanca?ref_src=twsrc%5Etfw">Tweets by CMAPASsalamanca</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+  </div>
+  <!-- REDES SOCIALES RESPONSIVE-->
+  <div class="contenedor-accordion-redes">
+      <div class="accordion accordion-redes" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" id="accordion-button-facebook" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="accordion-button-titulo">
+            <h1><i class="bi bi-facebook"></i>Facebook</h1>
+          </div>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body" id="accordion-body-facebook">
+          <div class="redes-card">
+            <h5 id="facebook-titulo"><i class="bi bi-facebook"></i>Facebook</h5>
+            <iframe id="frame-facebook"
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPorAmorAlAguaTodosUnidos&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              <!-- frame responsive -->
+              <iframe id="frame-facebook-resp" 
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPorAmorAlAguaTodosUnidos&tabs=timeline&width=220&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" 
+              width="220" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-instagram" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <div class="accordion-button-titulo">
+            <h1><i class="bi bi-instagram"></i>Instagram</h1>
+          </div>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body" id="accordion-body-instagram">
+          <div class="redes-card">
+            <h5 id="instagram-titulo"><i class="bi bi-instagram"></i>Instagram</h5>
+            <div id="frame-instagram">
+                          <blockquote class="instagram-media" data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/Ctb1SG6OoTR/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14"
+              style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+              <div style="padding:16px;"> <a
+                  href="https://www.instagram.com/p/Ctb1SG6OoTR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                  target="_blank">
+                  <div style=" display: flex; flex-direction: row; align-items: center;">
+                    <div
+                      style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                      <div
+                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                      </div>
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0;"></div>
+                  <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px"
+                      viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                      xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path
+                              d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                            </path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></div>
+                  <div style="padding-top: 8px;">
+                    <div
+                      style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                      Ver esta publicación en Instagram</div>
+                  </div>
+                  <div style="padding: 12.5% 0;"></div>
+                  <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                    <div>
+                      <div
+                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                      </div>
+                      <div
+                        style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                      </div>
+                      <div
+                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                      </div>
+                    </div>
+                    <div style="margin-left: 8px;">
+                      <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                      </div>
+                      <div
+                        style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                      </div>
+                    </div>
+                    <div style="margin-left: auto;">
+                      <div
+                        style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                      </div>
+                      <div
+                        style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                      </div>
+                      <div
+                        style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                    <div
+                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                    </div>
+                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                    </div>
+                  </div>
+                </a>
+                <p
+                  style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                  <a href="https://www.instagram.com/p/Ctb1SG6OoTR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                    target="_blank">Una publicación compartida por Cmapas Salamanca (@cmapas_salamanca)</a></p>
+              </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+            <div id="frame-instagram-resp">
+              <i>Ir a -> <a href="https://www.instagram.com/cmapas_salamanca/?hl=es">CMAPAS<i class="bi bi-instagram"></i></a></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" id="accordion-button-twitter" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div class="accordion-button-titulo">
+            <h1><i class="bi bi-twitter"></i>Twitter</h1>
+          </div>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body" id="accordion-body-twitter">
+          <div class="redes-card">
+            <h5  id="twitter-titulo"><i class="bi bi-twitter"></i>Twitter</h5>
+
+            <div id="frame-twitter">
+                          <a class="twitter-timeline" data-lang="es" data-width="340" data-height="500" data-theme="light"
+              href="https://twitter.com/CMAPASsalamanca?ref_src=twsrc%5Etfw">Tweets by CMAPASsalamanca</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <div id="frame-twitter-resp">
+                          <a class="twitter-timeline" data-lang="es" data-width="220" data-height="300" data-theme="light"
+            href="https://twitter.com/CMAPASsalamanca?ref_src=twsrc%5Etfw">Tweets by CMAPASsalamanca</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="container-fluid footer z-2">
+    <div class="footer-images z-3">
+      <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/?idSujetoObigadoParametro=12310&idEntidadParametro=11"
+        target="_blank"><img src="./assets/footer/obligaciones.png" alt="" id="obligaciones"></a>
+      <a href="https://denuncia.salamanca.gob.mx/" target="_blank"><img src="./assets/footer/cm.png" alt=""
+          id="quejas"></a>
+      <a href="https://www.plataformadetransparencia.org.mx/" target="_blank"><img src="./assets/footer/denuncias.png"
+          alt="" id="denuncias"></a>
+    </div>
+    <div class="footer-text text-center">
+      <img src="./assets/footer/mapa.png" width="40px" alt="">
+      <p>Naranjos #101 Col. Bellavista | Guerrero #104, Zona Centro | Río Madonte
+        S/N Blvd. | Rinconada San Pedro #420, Col. Rinconada San Pedro</p>
+    </div>
+    <div class="footer-num">
+      <div class="info tel">
+        <img src="./assets/footer/tel.png" class="mx-2" alt="">
+        <p>464-64-80207</p>
+      </div>
+      <div class="info aquatel">
+        <img src="./assets/footer/aquatel.png" class="mx-2" alt="">
+        <p>AQUATEL 073</p>
+      </div>
+    </div>
+    <div class="footer-banner">
+    </div>
+  </div>
+
+  <!-- REDES SOCIALES LATERAL - PANTALLA GRANDE -->
+  <div class="container-redes-sociales z-3">
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/PorAmorAlAguaTodosUnidos" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/CMAPASsalamanca" target="_blank"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/cmapas_salamanca/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@cmapas.salamanca?_t=8aX54CcBVMj&_r=1" target="_blank"><i
+          class="bi bi-tiktok"></i></a>
+    </div>
+  </div>
+
+  <!-- REDES SOCIALES LATERAL - DISPOSITIVOS MOVILES -->
+  <div class="container-redes z-3">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+      <a href="https://www.facebook.com/PorAmorAlAguaTodosUnidos" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com/CMAPASsalamanca" target="_blank"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/cmapas_salamanca/?hl=es" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.tiktok.com/@cmapas.salamanca?_t=8aX54CcBVMj&_r=1" target="_blank"><i
+          class="bi bi-tiktok"></i></a>
+    </div>
+    <div class="btn-mas">
+      <label for="btn-mas" class="bi bi-plus"></label>
+    </div>
+  </div>
+
+  <!-- -----------------------------------MODALES DE NOTICIAS------------------------------------- -->
+  <!-- Modal NOTICIA PRINCIPAL -->
+  <div class="modal fade" id="noticia-princ">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 title-modal" id="exampleModalLabel">NOTICIA PRINCIPAL</h1>
+        </div>
+        <div class="modal-body">
+          <h1>CMAPAS presenta una gran respuesta por la
+            ciudadanía para el descuento de pago por el servicio</h1>
+          <div class="carrusel-modal">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="carousel-item">
+                  <img src="./assets/index/noticias/img-noticias-2.jfif" class="d-block w-100">
+                </div>
+                <div class="carousel-item" id="carousel-item">
+                  <img src="./assets/index/noticias/img-noticias-princ-1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" id="carousel-item">
+                  <img src="./assets/index/noticias/img-noticias-princ-3.jpg" class="d-block w-100">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <p id="modal-body-text">
+            CMAPAS apoya a las personas adultas y con discapacidad con descuentos del 20% en el
+            pago de los servicios realizados por el Comité Municipal de Agua Potable y Alcantarillado
+            de Salamanca, el cual hasta el mes de enero han tenido una gran participación por parte de
+            este sector de la ciudadanía. <br> <br> <br>
+
+            Ulises Banda Coronado, Presidente del Comité Municipal de Agua Potable y Alcantarillado
+            de Salamanca (CMAPAS) comentó que actualmente se encuentran llevando a cabo el programa de
+            descuento del 20% el cual se verá reflejado en los servicios y recibos de CMAPAS.
+            Ulises Banda Coronado, comentó que este descuento se verá reflejado durante todo el año.
+            Cabe mencionar que para que las personas se puedan ver beneficiadas con este descuento,
+            tendrán que estar al corriente con el pago de su impuesto predial.
+            “Tienen que ser mayores de 60 años, ser jubilados o pensionados o bien tener una capacidad
+            diferente, para que sean aptos de estos apoyos, se apoyarán alrededor de 8 mil 200 cuentas,
+            los que son sujetas a este apoyo de las 64 mil que actualmente cuenta el Comité de CMAPAS”,
+            añadió. <br> <br> <br>
+            En lo que va de este 2023, en CMAPAS se ha tenido una gran respuesta por parte de la ciudadanía
+            mayor de 60 años de edad, quienes han acudido a realizar su trámite de descuento, mismo que se
+            presenta en cualquiera de las tres instalaciones que se cuentan en el municipio.
+
+            “Tenemos buena respuesta, atendemos a mucha gente en las tres oficinas que tenemos,
+            les ayudamos a elaborar su proceso y a subir sus documentos al portal para que se haga
+            válido su descuento, aunque algunos lo hacen remotamente, y hasta el momento si hemos
+            tenido una buena respuesta”, explicó. <br> <br> <br>
+            El presidente de CMAPAS enfatizó que esta campaña de descuento se llevará a cabo en todo el
+            mes de enero y febrero. Para las personas mayores de 60 años tienen que presentar la siguiente
+            documentación que acredite pensión o jubilación, correo electrónico, foto con su predial,
+            foto de su identificación (INE, Pasaporte, cédula profesional, licencia de manejo o cartilla militar),
+            foto de CURP, así como una foto de superveniencia con periódico del día que indique la fecha en la
+            cual se envían los documentos y una foto del recibo de agua.</p>
+        </div>
+        <div class="modal-footer" id="footer-modal-noticia">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE CULTURA DE AGUA -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 title-modal" id="exampleModalLabel">CULTURA DEL AGUA</h1>
+        </div>
+        <div class="modal-body">
+          <div class="text-cultura-agua">
+            <b>INTRODUCCIÓN</b>
+            <P>El programa de Cultura del Agua
+              del Comité Municipal de Agua Potable y
+              Alcantarillado de Salamanca, se creó
+              en 1996 con el objetivo de crear
+              conciencia del uso eficiente del
+              vital líquido.</P>
+            <b>OBJETIVO</b>
+            <p>Nuestra principal función es
+              concientizar a los distintos sectores
+              de la ciudadanía: usuarios, estudiantes,
+              profesionales, académicos y público en
+              general, del grave problema que representa
+              la contaminación y el desperdicio del agua.
+            </p>
+            <b>ACCIONES</b>
+            <P>• Participación en ferias, y eventos con
+              stands informativos e interactivos, desfiles y caravanas. <br>
+              • Pláticas a estudiantes de los diferentes niveles de educativos.</P>
+            <b>MISIONES</b>
+            <P>Motivar el cambio de actitud de la población en general,
+              con acciones encaminadas a valorar el agua, y la importancia
+              que tiene su uso racional y adecuado, para las siguientes
+              generaciones y para todos los seres vivos del planeta.
+            </P>
+          </div>
+          <!-- contenedor de imagen del modal-->
+          <div class="images-cultura-agua">
+            <img src="./assets/index/modal/cultura-del-agua-4.png" id="imag-princ-agua">
+            <div class="url-img">
+              <a href="http://hidrokids.guanajuato.gob.mx/videos.php" target="_blank"><img
+                  src="assets/index/modal/cultura-del-agua-3.png" id="imag-url-games">COLOREA TU
+                MUNDO!</a>
+              <a href="http://hidrokids.guanajuato.gob.mx/juegos.php" target="_blank"><img
+                  src="./assets/index/modal/cultura-del-agua-2.png" id="imag-url-games">CAPSULA "CUIDEMOS EL
+                AGUA"</a>
+            </div>
+            <img src="./assets/index/modal/cultura-del-agua-1.png" id="imag-footer-agua">
+          </div>
+        </div>
+        <div class="modal-footer" id="footer-modal-noticia">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -----------------------CHATBOT CMAPAS------------------------- -->
+ 
+  <script id="cmapas-bot" src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script> 
+  <df-messenger
+    intent="WELCOME" chat-title="CMAPAS Bot" agent-id="9931227a-932a-4324-be48-369fc7aba4ad" 
+    language-code="es">
+  </df-messenger>
+
+     <!-- Modal al cargar p�gina-->
+      <div class="modal fade" id="exampleModalCarga" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content" style="margin: 0; padding: 0;">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 title-modal" id="exampleModalLabel">TR&Aacute;MITE INSEN</h1>
+            </div>
+            <div class="modal-body">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./assets/carga-carousel/tarjeton-para-prestacion-tarifa-insen-pensionado.jpg" class="d-block w-100 carousel-carga-img"  alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/carga-carousel/mercado-pago-2.jpg" class="d-block w-100 carousel-carga-img"  alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-between" id="footer-modal-carga">
+              <a href="http://cmapas.gob.mx/portal/insen/" target="_blank">
+                <img class="tramite-insen" src="./assets/carga-carousel/bti.png" alt="">
+                </a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--MOSTRAR MODAL AL CARGAR P�GINA-->
+    <script>
+
+      $( document ).ready(function() {
+            $('#exampleModalCarga').modal('show');
+      });
+    </script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

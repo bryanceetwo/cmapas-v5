@@ -1,0 +1,634 @@
+.container-organigrama {
+	display: flex;
+	justify-content: center;
+	height: max-content;
+}
+
+
+.organigrama * {
+	margin: 0px;
+	padding: 0px;
+}
+
+.organigrama ul {
+	padding-top: 20px;
+	position: relative;
+}
+
+.organigrama li {
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	padding: 20px 5px 0px 5px;
+	position: relative;
+}
+
+.organigrama li::before,
+.organigrama li::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 50%;
+	border-top: 1px solid #000;
+	width: 50%;
+	height: 20px;
+}
+
+.organigrama li::after {
+	right: auto;
+	left: 50%;
+	border-left: 1px solid #000;
+}
+
+.organigrama li:only-child::before,
+.organigrama li:only-child::after {
+	display: none;
+}
+
+.organigrama li:only-child {
+	padding-top: 0;
+}
+
+.organigrama li:first-child::before,
+.organigrama li:last-child::after {
+	border: 0 none;
+}
+
+.organigrama li:last-child::before {
+	border-right: 1px solid #000;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+}
+
+.organigrama li:first-child::after {
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+.organigrama ul ul::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border-left: 1px solid #000;
+	width: 0;
+	height: 20px;
+}
+
+#gerencia-general::before {
+	/* <-- Gerencia General*/
+	border-top: 1px solid #000;
+	width: 60px;
+	content: '';
+	position: absolute;
+	top: 10%;
+	right: 40%;
+
+}
+
+
+
+.organigrama li a {
+	padding: 1em 0.75em;
+	text-decoration: none;
+	color: #333;
+	background-color: rgba(255, 255, 255, 0.5);
+	font-family: arial, verdana, tahoma;
+	font-size: 0.85em;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	transition: all 500ms;
+}
+
+.organigrama li a:hover {
+	color: #ddd;
+	display: inline-block;
+	background: #9D2449;
+}
+
+.organigrama>ul>li>a {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+
+/* CONSEJO DIRECTIVO */
+#consejo-directivo {
+	content: ' ';
+	background: url(../assets/quienes-somos/organigrama/o1.png) center no-repeat;
+	height: 150px;
+	width: 130px;
+	background-size: contain;
+}
+
+#consejo-directivo:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o1cd.png) center no-repeat;
+}
+
+/* GERENCIA GENERAL */
+#gerencia-general {
+	content: ' ';
+	background: transparent url(../assets/quienes-somos/organigrama/o2.jpg) center no-repeat;
+	height: 150px;
+	width: 130px;
+}
+
+#gerencia-general:hover {
+	background: transparent url(../assets/quienes-somos/organigrama/hover/o22.png) center no-repeat;
+
+}
+
+/* ASISTENTE GERENCIA GENERAL */
+#asistente-gg {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o3.jpg) center no-repeat;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	right: 23%;
+}
+
+/* COORDINADOR SISTEMAS GESTION */
+#coordinador-sistemas-gestion {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o4.jpg) center no-repeat;
+	width: 200px;
+	height: 50px;
+}
+
+/* ASESORIA EXTERNA */
+#asesoria-externa {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o5.jpg) center no-repeat;
+	width: 120px;
+	height: 50px;
+}
+
+/* GERENCIA COMERCIAL */
+#gerencia-comercial {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o6.jpg) center no-repeat;
+	width: 100px;
+	height: 120px;
+}
+
+#gerencia-comercial:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o66.png) center no-repeat;
+}
+
+/* GERENCIA ADMINISTRATIVA */
+#gerencia-administrativa {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o7.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-administrativa:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o77.png) center no-repeat;
+}
+
+/* GERENCIA ALCANTARILLADO */
+#gerencia-alcantarillado {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o8.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-alcantarillado:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o88.png) center no-repeat;
+}
+
+/* GERENCIA AGUA POTABLE */
+#gerencia-agua-potable {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o9.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-agua-potable:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o99.png) center no-repeat;
+}
+
+/* GERENCIA JURIDICA */
+#gerencia-juridica {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o10.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-juridica:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o100.png) center no-repeat;
+}
+
+/* GERENCIA INGENERIA PROYECTOS */
+#gerencia-ing-proyecto {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o11.jpg) center no-repeat;
+	width: 150px;
+	height: 140px;
+}
+
+#gerencia-ing-proyecto:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o111.png) center no-repeat;
+}
+
+/* GERENCIA CALIDAD AGUA */
+#gerencia-calidad-agua {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o12.jpg) center no-repeat;
+	width: 150px;
+	height: 130px;
+}
+
+#gerencia-calidad-agua:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o122.png) center no-repeat;
+}
+
+/* GERENCIA MANTENIMIENTO */
+#gerencia-mantenimiento {
+	content: '';
+	background: url(../assets/quienes-somos/organigrama/o13.jpg) center no-repeat;
+	width: 150px;
+	height: 120px;
+}
+
+#gerencia-mantenimiento:hover {
+	background: url(../assets/quienes-somos/organigrama/hover/o133.png) center no-repeat;
+}
+
+
+/* MODALES */
+
+/* ESTILO MODALES */
+.info-modal {
+	width: 600px;
+}
+
+#modal-info {
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+
+}
+
+.title-modal {
+	color: #B38E5D;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#nota-title {
+	text-align: center;
+}
+
+#footer-modal {
+	background-image: url(../assets/footer/banner.png);
+	background-size: cover;
+}
+
+#nota-text {
+	text-align: center;
+}
+
+#horario-atencion {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#horario-atencion-fecha {
+	font-weight: bold;
+}
+
+ul {
+	text-align: justify;
+}
+
+#container-cards {
+	margin-top: 50px;
+}
+
+#modal-margin {
+	margin: 0;
+	padding: 0;
+}
+
+#modal-margin>p {
+	margin: 20px;
+	text-align: justify;
+}
+
+
+
+/* ANCHO */
+@media screen and (max-width: 1293px) {
+	#consejo-directivo {
+		width: 120px;
+		height: 100px;
+		background-size: contain;
+	}
+
+	#consejo-directivo:hover {
+		width: 120px;
+		height: 100px;
+		background-size: contain;
+	}
+
+	#gerencia-general {
+		height: 120px;
+		width: 100px;
+		background-size: contain;
+	}
+
+	#gerencia-general:hover {
+		height: 120px;
+		width: 100px;
+		background-size: contain;
+	}
+
+	#gerencia-general::before {
+		/* <-- Gerencia General*/
+		top: 8.5%;
+		right: 38%;
+
+	}
+
+	#asistente-gg {
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		right: 20%;
+		bottom: 79%;
+		background-size: contain;
+	}
+
+	#coordinador-sistemas-gestion {
+		width: 150px;
+		height: 40px;
+		background-size: contain;
+
+	}
+
+	#asesoria-externa {
+		width: 100px;
+		height: 40px;
+		background-size: contain;
+	}
+
+	#gerencia-comercial {
+		width: 80px;
+		height: 100px;
+		background-size: contain;
+	}
+
+	#gerencia-comercial:hover {
+		width: 80px;
+		height: 100px;
+		background-size: contain;
+	}
+
+	#gerencia-administrativa {
+		background-size: contain;
+		width: 107px;
+		height: 100px;
+	}
+	#gerencia-administrativa:hover {
+		background-size: contain;
+		width: 107px;
+		height: 100px;
+	}
+
+
+	#gerencia-alcantarillado {
+		background-size: contain;
+		width: 110px;
+		height: 100px;
+	}
+	#gerencia-alcantarillado:hover {
+		background-size: contain;
+		width: 110px;
+		height: 100px;
+	}
+
+	#gerencia-agua-potable {
+		background-size: contain;
+		width: 100px;
+		height: 100px;
+	}
+	#gerencia-agua-potable:hover {
+		background-size: contain;
+		width: 100px;
+		height: 100px;
+	}
+
+	#gerencia-juridica {
+		background-size: contain;
+		width: 84px;
+		height: 100px;
+	}
+	#gerencia-juridica:hover {
+		background-size: contain;
+		width: 84px;
+		height: 100px;
+	}
+
+	#gerencia-ing-proyecto {
+		background-size: contain;
+		width: 100px;
+		height: 116px;
+	}
+	#gerencia-ing-proyecto:hover {
+		background-size: contain;
+		width: 100px;
+		height: 116px;
+	}
+
+	#gerencia-calidad-agua {
+		background-size: contain;
+		width: 90px;
+		height: 120px;
+	}
+	#gerencia-calidad-agua:hover {
+		background-size: contain;
+		width: 90px;
+		height: 120px;
+	}
+
+	#gerencia-mantenimiento {
+		background-size: contain;
+		width: 115px;
+		height: 100px;
+	}
+	#gerencia-mantenimiento:hover {
+		background-size: contain;
+		width: 115px;
+		height: 100px;
+	}
+
+
+}
+
+@media screen and (max-width: 929px) {
+
+
+	#consejo-directivo {
+		width: 100px;
+		height: 90px;
+		background-size: contain;
+	}
+
+	#consejo-directivo:hover {
+		width: 100px;
+		height: 90px;
+		background-size: contain;
+	}
+
+	#gerencia-general {
+		height: 100px;
+		width: 90px;
+		background-size: contain;
+	}
+	#gerencia-general:hover {
+		height: 100px;
+		width: 90px;
+		background-size: contain;	
+	}
+
+	#gerencia-general::before {
+		/* <-- Gerencia General*/
+		top: 7%;
+		right: 35.5%;
+
+	}
+
+	#asistente-gg {
+		width: 130px;
+		height: 100px;
+		position: absolute;
+		right:17%;
+		bottom: 82%;
+		background-size: contain;
+	}
+
+	#coordinador-sistemas-gestion {
+		width: 130px;
+		background-size: contain;
+	}
+
+	#asesoria-externa {
+		width: 80px;
+		height: 40px;
+		background-size: contain;
+	}
+
+	#gerencia-comercial {
+		width: 60px;
+		height: 80px;
+		background-size: contain;
+	}
+
+	#gerencia-comercial:hover {
+		width: 60px;
+		height: 80px;
+		background-size: contain;
+	}
+
+	#gerencia-administrativa {
+		background-size: contain;
+		width: 80px;
+		height: 80px;
+	}
+	#gerencia-administrativa:hover {
+		background-size: contain;
+		width: 80px;
+		height: 80px;
+	}
+
+
+	#gerencia-alcantarillado {
+		background-size: contain;
+		width: 83px;
+		height: 83px;
+	}
+	#gerencia-alcantarillado:hover {
+		background-size: contain;
+		width: 83px;
+		height: 83px;
+	}
+
+	#gerencia-agua-potable {
+		background-size: contain;
+		width: 80px;
+		height: 83px;
+	}
+	#gerencia-agua-potable:hover {
+		background-size: contain;
+		width: 80px;
+		height: 83px;
+	}
+
+	#gerencia-juridica {
+		background-size: contain;
+		width: 68px;
+		height: 83px;
+	}
+	#gerencia-juridica:hover {
+		background-size: contain;
+		width: 68px;
+		height: 83px;
+	}
+
+	#gerencia-ing-proyecto {
+		background-size: contain;
+		width: 83px;
+		height: 98px;
+	}
+	#gerencia-ing-proyecto:hover {
+		background-size: contain;
+		width: 83px;
+		height: 98px;
+	}
+
+	#gerencia-calidad-agua {
+		background-size: contain;
+		width: 80px;
+		height: 101px;
+	}
+	#gerencia-calidad-agua:hover {
+		background-size: contain;
+		width: 80px;
+		height: 101px;
+	}
+
+	#gerencia-mantenimiento {
+		background-size: contain;
+		width: 100px;
+		height: 86px;
+	}
+	#gerencia-mantenimiento:hover {
+		background-size: contain;
+		width: 100px;
+		height: 86px;
+	}
+
+
+}
+
+
+
+
+

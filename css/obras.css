@@ -1,0 +1,64 @@
+/*OBRAS*/
+.contenedor-obras{
+    display: none;
+}
+
+.obras-card-text{
+    width: 50%;
+}
+
+.obras-card-text p{
+    text-align: justify;
+}
+
+.obras-card-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1280px) {
+ .accordion-body-card{
+    flex-direction: column;
+ }
+
+ .obras-card-text{
+    width: 100%;
+ }
+
+ .obras-card-text p{
+    text-align: justify;
+ }
+
+ .obras-card-img{
+    width: 100%;
+ }
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 540px) {
+
+}
+
+/*-----------------------ACORDIONES-------------------------------*/
+.accordion{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.accordion-body-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    font-weight: bold;
+}

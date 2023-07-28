@@ -1,0 +1,132 @@
+#container-nuestros-servicios > h1{
+    color: #33564C;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+
+#servicios-card-style{
+    border-color: #9D2449;
+}
+
+#servicios-card-style > div{
+    color: #9D2449;
+}
+
+#servicios-card-style > div > a{
+    text-decoration: none; color: #B9B9B9;
+}
+
+
+/* SLIDER LOGOS */
+.slider {
+    width: auto;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(100px * 7);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.slider .slide{
+    width: auto;
+}
+
+.slider .slide img{
+    width: auto;
+    height: 60px;
+    margin-right: 5px;
+}
+
+@keyframes scroll{
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-205px * 12));
+        transform: translateX(calc(-205px * 12));
+    }
+}
+
+/* CARDS-PUNTOS DE PAGO*/
+#card-style-servicio{
+    border-color:transparent ;
+}
+
+@media screen and (max-width: 1199px){
+    #card-style-servicio{
+        border-color: #9D2449;
+    }
+}
+
+.icons-download{
+    display: flex;
+}
+
+.icons-download a{
+    text-decoration: none;
+}
+
+#android-icon svg{
+    width: 50px;
+    height: 50px;
+    color: #3DDC84;
+    text-decoration: none;
+}
+
+#apple-icon svg{
+    width: 50px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+#container-card-servicio > div > .col > div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.img-card-servicio{
+    background: #E6E7E8;
+    width: 100%;
+    display: flex; justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 125px;
+}
+
+
+
+
+
+#container-card-servicio > div > .col > div > .lista-horarios{
+    margin:0; padding:0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lista-horarios > li{
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 0.55cm;
+}
+
+.lista-horarios > li > b{
+    font-weight: 600;
+}

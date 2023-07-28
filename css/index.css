@@ -1,0 +1,665 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #97989b;
+    border-radius: 50px;
+    border-right: 10px;
+}
+
+.cert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1250px) {
+    .cert{
+        margin-bottom: 0;
+    }
+} 
+
+
+
+/*<-------------CONTENED0R DE NOTICIAS------------->*/
+
+/*-----------------NOTICIAS REDES---------------------*/
+.noticias-redes{
+    width: 100%;
+}
+
+.noticias-redes-titulo{
+    color: #056A6E;
+    text-align: center;
+}
+
+.noticias-redes-titulo h1{
+    font-weight: bold; 
+}
+
+.noticias-redes-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-card{
+    margin: 5%;
+    width: 340px;
+    max-width: 400px;
+}
+
+.redes-card h5{
+    color: #056A6E;
+    text-decoration: overline;
+}
+
+.redes-card i{
+    margin: 20px;
+}
+
+@media screen and (max-width: 1540px) {
+    .noticias-redes-cards{
+        flex-wrap: wrap;
+    }
+} 
+
+/*OBRAS*/
+.contenedor-obras{
+    display: none;
+}
+
+.obras-card-text{
+    width: 50%;
+}
+
+.obras-card-text p{
+    text-align: justify;
+}
+
+.obras-card-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1280px) {
+ .accordion-body-card{
+    flex-direction: column;
+ }
+
+ .obras-card-text{
+    width: 100%;
+ }
+
+ .obras-card-text p{
+    text-align: justify;
+ }
+
+ .obras-card-img{
+    width: 100%;
+ }
+
+}
+
+.accordion-redes{
+    display: none;
+}
+
+/* ------------------------ACORDION DE REDES SOCIALES ----------------------------- */
+
+@media screen and (max-width: 849px) {
+
+    .accordion-item{
+        border: none;
+    }
+    .contenedor-accordion-redes{
+        margin-bottom: 5vh;
+    }
+    #frame-facebook-resp{
+        display: none;
+    }
+
+    #frame-twitter-resp{
+        display: none;
+    }
+
+    #frame-instagram-resp{
+        display: none;
+    }
+
+    .accordion-redes{
+        width: 100% !important;
+        display: unset;
+    }
+
+    #noticias-redes-pc{
+        display: none;
+    }
+
+    #accordion-body-facebook{
+        display: flex;
+        justify-content: center;
+    }
+
+    #accordion-body-instagram{
+        display: flex;
+        justify-content: center;
+    }
+
+    #accordion-body-twitter{
+        display: flex;
+        justify-content: center;
+    }
+
+    #twitter-titulo, #instagram-titulo, #facebook-titulo{
+        display: none;
+    }
+
+    #accordion-button-twitter,#accordion-button-instagram,#accordion-button-facebook{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #accordion-button-twitter i,#accordion-button-instagram i,#accordion-button-facebook i{
+        margin-right: 20px;
+    }
+
+    .accordion-button-titulo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .accordion-button-titulo h1{
+        font-size: 24px;
+    }
+   
+   }
+
+   @media screen and (max-width: 400px) {
+
+    .accordion-button-titulo{
+        text-align: inherit;
+    }
+    .accordion-button-titulo h1{
+        font-size: 18px;
+    }
+
+    .modal-cult-agua {
+        font-size: 12px;
+    }
+   }
+
+
+   @media screen and (max-width: 350px) {
+
+    .accordion-button-titulo{
+        text-align: inherit;
+    }
+    .accordion-button-titulo h1{
+        font-size: 18px;
+    }
+
+    .modal-cult-agua {
+        font-size: 8px;
+    }
+
+    #frame-facebook{
+        display: none;
+    }
+
+    #frame-facebook-resp{
+        display: unset;
+    }
+
+    #frame-twitter{
+        display: none;
+    }
+
+    #frame-twitter-resp{
+        display: unset;
+    }
+
+    .twitter-timeline{
+        margin: 0 auto;
+    }
+
+    #frame-instagram{
+        display: none;
+    }
+
+    #frame-instagram-resp{
+        display: unset;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    #frame-instagram-resp a{
+        text-decoration: none;
+        color: #056A6E;
+        margin: 0 auto;
+    }
+
+    .redes-card{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+   }
+
+/*-----------------------ACORDIONES-------------------------------*/
+.accordion{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.accordion-body-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    font-weight: bold;
+}
+
+/*MODAL CULTURA DEL AGUA*/
+.text-cultura-agua p {
+    font-size: medium;
+}
+
+.text-cultura-agua b {
+    color: #056A6E;
+}
+
+
+.images-cultura-agua {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.images-cultura-agua img {
+    margin: 1%;
+}
+
+#imag-url-games {
+    width: 100%;
+}
+
+#imag-princ-agua {
+    width: 60%;
+}
+
+#imag-footer-agua {
+    width: 100%;
+}
+
+.url-img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.url-img a {
+    font-weight: 500;
+    font-size: small;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #056A6E;
+    transition: 0.5s;
+}
+
+.url-img a:hover {
+    color: rgb(101, 214, 48);
+    transition: 0.5s;
+}
+
+.modal-cult-agua {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #056A6E;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 900px) {
+    .cont-agua{
+        flex-direction: column;
+    }
+}
+
+/*DISEÑO DE LOS MODALES*/
+
+.info-modal {
+    width: 600px;
+}
+
+#modal-info {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.title-modal {
+    color: #B38E5D;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nota-title {
+    text-align: center;
+}
+
+#carousel-item img{
+    height: 400px;
+}
+
+#footer-modal {
+    background-image: url(../../assets/index/modal/banner.png);
+    background-size: cover;
+}
+
+.modal-body {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrusel-modal{
+    width: 80%;
+    margin-bottom: 2vh;
+}
+
+.modal-body p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.modal-body h1{
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+#modal-body-text{
+    font-size: 16px;
+    width: 80%;
+}
+
+#horario-atencion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#horario-atencion-fecha {
+    font-weight: bold;
+}
+
+.boton-modal {
+    background-color: #741E41;
+    border-radius: 100px;
+    color: white;
+}
+
+ul {
+    text-align: justify;
+}
+
+/*LICITACIONES*/
+/*.cont-licitaciones {
+    background-color: #EEEDED;
+}*/
+
+.cont-licitaciones h1 {
+    color: #056A6E;
+    font-weight: bold;
+}
+
+.licitacion-titulo{
+    margin-top: 5vh;
+    text-align: center;
+    width: 100%;
+}
+
+.licitacion-archivo {
+    width: 100%;
+    display: flex;
+    max-width: 1600px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.archivo {
+    margin: 5%;
+    width: 20%;
+}
+
+.archivo a {
+    text-decoration: none;
+    color: black;
+}
+
+.archivo img {
+    width: 100px;
+}
+
+
+@media screen and (max-width: 1600px){
+    .licitacion-archivo{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 991px){
+    #carousel-item img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .licitacion-archivo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .archivo{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .archivo img{
+        width: 50px;
+    }
+}
+
+
+@media screen and (max-width: 680px){
+ #carousel-item img{
+    height: 150px;
+ }
+}
+
+/*------------------------------NUEVAS NOTICIAS-----------------------------*/
+#img-noticias {
+    background-image: url(../assets/index/noticias/img-noticias-5.png);
+    background-size: cover;
+  }
+  #img-cultura-agua {
+    background-image: url(../assets/gerencias/PC/banner-17.jpg);
+    background-size: cover;
+  }
+  #info-noticias {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 40vh;
+  }
+
+  #info-noticias-agua {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 40vh;
+  }
+
+  @media screen and (max-width: 1710px){
+    #info-noticias-agua {
+        height: 60vh;
+    }
+
+    #info-noticias {
+        height: 60vh;
+    }
+}
+
+  #noticias-titulo {
+    color: #000000;
+    font-weight: bold;
+  }
+
+
+  #logo-cultura-agua{
+    width: 200px;
+  }
+  .noticia-principal{
+    width: 50%;
+  }
+
+  .noticia-principal p{
+    color: #000000;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #texto-cultura-agua {
+    color: #000000;
+    font-size: 16px;
+    width: 50%;
+    text-align: justify;
+  }
+  #img-noticias-resp {
+    display: none;
+  }
+  #img-cultura-agua-resp {
+    display: none;
+  }
+  .carousel-mvv{
+    display: none;
+    background-color: #D8D8D8 ;
+  }
+
+  @media screen and (max-width: 1399px) {
+    #img-noticias-resp {
+      display: unset;
+      margin: 0;
+      background-image: url(../assets/index/noticias/img-noticias-5.png);
+      background-size: cover;
+      content: ' ';
+    }
+  
+    #img-cultura-agua-resp {
+      display: unset;
+      margin: 0;
+      background-image: url(../assets/gerencias/PC/banner-17.jpg);
+      background-size: cover;
+      content: ' ';
+    }
+  }
+  
+  @media screen and (max-width:690px){
+     /* CAMBIA EL TAMAÑO DEL CONTENEDOR DE TEXTO -- CONSEJO Y GERENCIA*/
+     #texto-cd-gg {
+      width: 70%;
+    }
+  
+  }
+
+/* CHATBOT */
+#cmapas-bot{
+    z-index: 3;
+}
+
+#navbar-cmapas{
+    z-index: 4;
+}
+
+.offcanvas-body{
+    z-index: 2;
+}
+
+@media screen and (max-width:780px){
+
+    .noticia-principal p{
+        font-size: 12px;
+        text-align: justify;
+      }
+    
+      #texto-cultura-agua {
+        font-size: 12px;
+        width: 50%;
+      }
+}
+
+
+@media screen and (max-width:480px){
+
+#info-noticias-agua{
+    height: 60vh;
+}
+
+#info-noticias{
+    height: 40vh;
+}
+}
+
+
+@media screen and (max-width:280px){
+
+    #texto-cultura-agua{
+        width: 90%;
+    }
+ }
+
+#footer-modal-noticia{
+    background-image: url(../assets/index/modal/banner.png);
+    background-size: cover;
+}

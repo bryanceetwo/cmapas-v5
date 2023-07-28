@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* HISTORIA */
+
+#historia {
+  background-color: #EEEDED;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+#historia-title {
+  color: #33564C;
+  font-size: 24px;
+  display: flex;
+  justify-content: start;
+}
+
+#historia-texto {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+  width: 544px;
+  color: #554F4F;
+
+}
+
+.historia-texto {
+  display: flex;
+  justify-content: center;
+}
+
+.historia-accordion {
+  display: none;
+}
+
+
+/* MISION VISION VALORES */
+
+#mision-vision-valores {
+  background-color: #D8D8D8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#columnas {
+  display: flex;
+  justify-content: center;
+}
+
+#historia-title {
+  width: 544px;
+  justify-content: start;
+}
+
+#mvv-texto {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+#row-mvv{
+  height: 280px;
+  background-color: #D8D8D8;
+}
+
+#carousel-item-mvv{
+  height: 50vh;
+}
+
+
+#titulos {
+  color: #33564C;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+/* CONSEJO DIRECTIVO Y GERENCIA GENERAL*/
+
+#img-cd {
+  background-image: url(../assets/quienes-somos/consejo-directivo.png);
+  background-size: cover;
+}
+#img-gg {
+  background-image: url(../assets/gerencias/GG/banner-20.jpg);
+  background-size: cover;
+}
+#info-cd-gg {
+  background: #621132;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#consejod-gerenciag {
+  background-color: #621132;
+}
+#titulo-cd-gg {
+  color: #fff;
+}
+#texto-cd-gg {
+  color: #fff;
+  font-weight: 100;
+  font-size: 16px;
+  width: 50%;
+  text-align: justify;
+}
+#img-cd-resp {
+  display: none;
+}
+#img-gg-resp {
+  display: none;
+}
+.carousel-mvv{
+  display: none;
+  background-color: #D8D8D8 ;
+}
+
+
+/* PTAR */
+#ptar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #EEEDED;
+  padding-top: 60px; padding-bottom: 80px;
+}
+#ptar-title {
+  color: #33564C;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+#row-ptar{
+  justify-content: center;
+}
+#ptar-texto {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+  color: #554F4F;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:500px){
+  #historia { /* DESAPARECE EL CONTENEDOR DE HISTORIA*/
+      display: none;
+  }
+
+  .historia-accordion { /* APARECE EL ACORDEON DE HISTORIA*/
+      display: unset;
+  }
+}
+
+@media screen and (max-width:576px){
+  /* CAMBIA LA FUENTE DE MISION | VISION | VALORES*/
+  #mvv-texto {
+    display: block;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 11pt;
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width:425px){
+  /* CAMBIA LA FUENTE DE MISION | VISION | VALORES*/
+  #mvv-texto {
+    display: block;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 11pt;
+    width: 80vw;
+  }
+
+  #row-mvv{  
+    height: 45vh;
+  }
+  
+}
+
+@media screen and (max-width: 342px){
+  #row-mvv{
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 300px){
+  #mvv-texto {
+    display: block;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 10pt;
+    width: 80vw;
+  }
+
+  #row-mvv{
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 767px) { /* LO INTERCAMBIA POR EL CAROUSEL*/
+  #titulos{
+    text-align: center;
+  }
+
+  #mvv-texto{
+    margin-bottom: 5px;
+  }
+
+  
+  #mision-vision-valores {
+    background-color: #D8D8D8;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 1399px) {
+  #img-cd-resp {
+    display: unset;
+    margin: 0;
+    background-image: url(../assets/quienes-somos/consejo-directivo.png);
+    background-size: cover;
+  }
+
+  #img-gg-resp {
+    display: unset;
+    margin: 0;
+    background-image: url(../assets/gerencias/GG/banner-20.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width:690px){
+   /* CAMBIA EL TAMAÑO DEL CONTENEDOR DE TEXTO -- CONSEJO Y GERENCIA*/
+   #texto-cd-gg {
+    width: 70%;
+  }
+
+}

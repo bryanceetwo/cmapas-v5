@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- link de css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/obras.css">
+    <link rel="icon" href="../../assets/LOGO-CMAPAS.png">
+    <!-- ICONOS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <!-- FUENTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+    <title>Obras | CMAPAS</title>
+</head>
+
+<body>
+   <!-- NAV -->
+   <a class="navbar-brand logo-navbar w-100" id="logo-desk" href="../../"><img src="../../assets/LOGO-CMAPAS.png" class="d-block m-auto pt-3" id="logo-navbar"></a>
+   <a class="fixed-top" style="visibility: hidden;" id="logo-scroll" href="../../"><img src="../../assets/LOGO-CMAPAS.png" style="width: 60px;"></a>
+   <nav class="navbar sticky-top navbar-cmapas">
+     <div class="container-fluid" id="container-nav">
+       <a class="navbar-brand logo-navbar" id="aparecer" href="../../"><img src="../../assets/LOGO-CMAPAS.png" id="logo-navbar"></a>
+       <div class="navbar-desktop">
+         <ul class="navbar-nav navbar-desktop-items">
+           <li class="nav-item">
+             <a class="nav-link" aria-current="page" href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+               <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+             </svg>Inicio</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+               <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+             </svg>¿Quiénes Somos?</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+              fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 
+  0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 
+  0 1-4.492 0z" />
+              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 
+  0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 
+  0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 
+  0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 
+  0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 
+  1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 
+  .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 
+  1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 
+  1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 
+  1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 
+  1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 
+  1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 
+  1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 
+  1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 
+  1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 
+  1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 
+  1.873 0 0 0 2.692-1.115l.094-.319z" />
+            </svg>Servicios</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" href="../obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                 fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                 <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
+     9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
+     5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
+     7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
+     1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
+     0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
+     1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
+               </svg>Obras</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../transparencia/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+               <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+             </svg>Transparencia</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+               <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+             </svg>Contacto</a>
+           </li>
+         </ul>
+       </div>
+ 
+       <button class="navbar-toggler boton-navbar" type="button" data-bs-toggle="offcanvas"
+         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+ 
+       <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
+         aria-labelledby="offcanvasDarkNavbarLabel">
+         <div class="offcanvas-header">
+           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="../../assets/LOGO-CMAPAS.png"
+               id="logo-navbar"></h5>
+           <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+             aria-label="Close"></button>
+         </div>
+         <div class="offcanvas-body">
+           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="../../"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                 <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+               </svg>Inicio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                 <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+               </svg>¿Quiénes somos?</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 
+    0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 
+    0 1-4.492 0z" />
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 
+    0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 
+    0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 
+    0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 
+    0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 
+    1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 
+    .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 
+    1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 
+    1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 
+    1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 
+    1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 
+    1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 
+    1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 
+    1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 
+    1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 
+    1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 
+    1.873 0 0 0 2.692-1.115l.094-.319z" />
+              </svg>Servicios</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="../obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                 fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                 <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
+     9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
+     5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
+     7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
+     1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
+     0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
+     1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
+               </svg>Obras</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../transparencia/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                 <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+               </svg> Transparencia</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="../contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+               </svg>Contacto</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </nav>
+
+    <!-- inicio del contenedor del carrusel principal -->
+        <!-- inicio del contenedor del carrusel principal -->
+        <div id="carouselquienessomos" class="carousel slide carousel-container">
+            <div class="carousel-indicators" id="carousel-imgs">
+              <img src="../../assets/obras/banner-obras1.png" type="button" data-bs-target="#carouselquienessomos"
+                data-bs-slide-to="0" class="active rounded-2" aria-current="true" aria-label="Slide 1">
+              <img src="../../assets/obras/banner-obras2.jpg" type="button" data-bs-target="#carouselquienessomos"
+                data-bs-slide-to="1" class="rounded-2" aria-label="Slide 2">
+              <img src="../../assets/obras/banner-obras3.jpg" type="button" data-bs-target="#carouselquienessomos"
+                data-bs-slide-to="2" class="rounded-2" aria-label="Slide 3">
+            </div>
+            <div class="carousel-inner" id="carousel-container-imgs">
+              <div class="carousel-item active" id="carousel-img">
+                <img src="../../assets/obras/banner-obras1.png" class="d-block w-auto m-auto" alt="...">
+              </div>
+              <div class="carousel-item" id="carousel-img">
+                <img src="../../assets/obras/banner-obras2.jpg" class="d-block w-auto m-auto" alt="...">
+              </div>
+              <div class="carousel-item" id="carousel-img">
+                <img src="../../assets/obras/banner-obras3.jpg" class="d-block w-auto m-auto" alt="...">
+              </div>
+            </div>
+          </div>
+        <!-- fin del contenedor del carrusel principal -->
+    <!-- fin del contenedor del carrusel principal -->
+
+    <!-- ACORDIONES -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Perforación de Pozo Profundo en la Zona Norte de la Ciudad de Salamanca, Gto. Pozo “Loma de Granados”
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Por el incremento de la demanda de agua potable en la cabecera municipal 
+                de Salamanca y con el fin de satisfacer de manera eficaz la demanda de agua 
+                potable de los ciudadanos de Salamanca, Gto., se perforará un pozo profundo 
+                en la zona de la ciudad. <br><br> <strong>CARACTERÍSTICAS DEL POZO:</strong> <br><br>
+                <div class="accordion-body-card">
+                    <div class="obras-card-text">
+                        <p><strong>Profundidad:</strong> 250.00 Metros.</p>
+                        <p><strong>Diámetro del Ademe:</strong> 30”(76.2 cms).</p>
+                        <p><strong>Diámetro De La Perforación:</strong> 24” (61 cms).</p>
+                        <p><strong>Casquillo Sanitario:</strong> 100.00 Mts.</p>
+                        <p><strong>Tubería Ranurada:</strong> 14”(35 cms.) Y 150.00 Metros</p>
+                        <p><strong>Filtro de Grava:</strong> 150.00 Metros</p>
+                        <p><strong>Habitantes Beneficiados:</strong> 7,747.00 Habitantes.</p>
+                        <p><strong>Derechos de Extracción:</strong> 1,135,296 Metros Cúbicos Anuales.</p>
+                        <p><strong>Gasto Concesionado:</strong> 36.00 Litros Por Segundo</p>
+                    </div>
+                    <div class="obras-card-img">
+                        <img src="../../assets/obras/pozo-loma-granados.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Rehabilitación de Lineas de Agua Potable y Tomas Domiciliarias en el Sector D, del Municipio de Salamanca (etapa dos de cuatro), Zona Centro.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="accordion-body-card">
+                    <div class="obras-card-text">
+                        <p>No. de Contrato CMAPAS/OP/RF/LPN/2022-03</p>
+                        <p>Fecha de inicio programada: 22 de Julio de 2022.</p>
+                        <p>Fecha de terminación programada: 18 de Noviembre de 2022.</p>
+                        <p>Duración Programación: 120 días naturales.</p>
+                        <p>Objeto del contrato: Rehabilitar las tuberías para dotar de un mejor servicio de agua potable y la mejora del servicio al usuario.</p>
+                        <p>Zona de Trabajo: Calle San Antonio entre Av. Cazadora y C. diagonal 
+                            Emiliano Zapata; C. San Antonio entre C. Artes y C. Del Bosque; Av. 
+                            Del Trabajo entre Av. Cazadora y C. Artes; C. Privada Cazadora; C. 
+                            Privada Artes; 1ra. y 2da. C. Privada San Antonio; C. Río Bravo 
+                            entre Av. Insurgentes y C. Mariano Abasolo; C. Río Suchiate entre 
+                            la Av. Insurgentes y la C. San Antonio; C. Artes entre C. diagonal 
+                            Emiliano Zapata y la C. Mariano Abasolo; C. Arquitectos entre Av. 
+                            Insurgentes y la C. San Antonio; C. Ingenieros entre Av. Insurgentes 
+                            y la C. San Antonio; C. Magisterio entre C. San Antonio y la Av. Del 
+                            Trabajo; C. del Boque entre Av. Insurgentes y la C. Mariano Abasolo; 
+                            y la C. Independencia entre Av. Insurgentes y la Av. Del Trabajo, 
+                            en la Zona Centro.</p>
+                        <p>Colonias Beneficiadas: Zona Centro</p>
+                        <p>Habitantes Beneficiados: 5,868.00 Habitantes.</p>
+                    </div>
+                    <div class="obras-card-img">
+                        <img src="../../assets/obras/tomas-sector-d.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Construcción de la linea de Alimentación Agua Potable del Pozo 11 Sardinas a Faja de Oro, Municipio de Salamanca, Gto.
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="accordion-body-card">
+                    <div class="obras-card-text">
+                        <p>No. de Contrato CMAPAS/OP/RF/LPN/2022-04</p>
+                        <p>Fecha de inicio programada: 01 de Agosto de 2022.</p>
+                        <p>Fecha de terminación programada: 28 de Noviembre de 2022.</p>
+                        <p>Duración Programación: 120 días naturales.</p>
+                        <p>Objeto del contrato: Restaurar la capacidad hidráulica 
+                            de la tubería, con el objetivo de proporcionar con calidad y 
+                            eficiencia los servicios de agua potable a los usuarios.</p>
+                        <p>Zona de Trabajo: Calle Naranjos entre Avenida Faja de Oro y 
+                            Calle Poza Rica; C. Poza Rica entre C. Naranjos y C. Tierra 
+                            Blanca; Cuerpo Poniente de la C. Tierra Blanca entre C. Poza 
+                            Rica y Calle A; Cuerpo Sur de la Calle A entre C. Tierra Blanca 
+                            y Calle 8; Calle 8 entre Calle A y el Canal Sardinas; Cuerpo 
+                            poniente del Boulevard Manuel J. Clouthier (carril lateral poniente) 
+                            entre el Canal Sardinas y la C. Monte Sinaí.</p>
+                        <p>Colonias Beneficiadas: Zona Norte: Col. Las Granjas, Col. Zacamixtle, 
+                            Col. Praderas del Sol, Col. Aztlán, Col. Las Reynas.
+                            Zona Oriente: Col. Tamaulipas, Col. Obrera, Col. Insurgentes, 
+                            Col. Álamos, Fracc. Fresnos, Col. Jardines del Sol, Col. San 
+                            Juan de la Presa, Col. La Cruz, Col. El pitayo.</p>
+                        <p>Habitantes Beneficiados: 17,060 Habitantes.</p>
+                    </div>
+                    <div class="obras-card-img">
+                        <img src="../../assets/obras/pozo-11-sardinas.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Rehabilitación de Colector Sanitario Humanista en Avenida Valle de Santiago, tramo Calle Estado de Baja California a Libramiento Sur (Tercera estapa de Tres)
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="accordion-body-card">
+                        <div class="obras-card-text">
+                            <p>No. de Contrato CMAPAS/OP/RF/LPN/2022-02</p>
+                            <p>Fecha de inicio programada: 11 de Julio de 2022.</p>
+                            <p>Fecha de terminación programada: 07 de Noviembre de 2022.</p>
+                            <p>Duración Programación: 120 días naturales.</p>
+                            <p>Objeto del contrato: Rehabilitar la infraestructura 
+                                existente y mejorar la conducción de las aportaciones 
+                                de agua residual al sitio de vertido; además de dar un 
+                                mejor servicio a los usuarios en esta zona conectando 
+                                su descarga sanitaria a la línea de atarjea.</p>
+                            <p>Zona de Trabajo: Cuerpo poniente de la Avenida Valle de Santiago entre la calle Estado de Baja California y el Libramiento Carretero.</p>
+                            <p>Colonias Beneficiadas: Humanista I, Ampliación La Luz, Parte de la colonia Villas del Valle.</p>
+                            <p>Habitantes Beneficiados: 3,320 Habitantes en esta tercera etapa.</p>
+                        </div>
+                        <div class="obras-card-img">
+                            <img src="../../assets/obras/libramiento-sur.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid footer z-2">
+        <div class="footer-images z-3">
+          <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/?idSujetoObigadoParametro=12310&idEntidadParametro=11"
+            target="_blank"><img src="../../assets/footer/obligaciones.png" alt="" id="obligaciones" /></a>
+          <a href="https://denuncia.salamanca.gob.mx/" target="_blank"><img src="../../assets/footer/cm.png" alt=""
+              id="quejas" /></a>
+          <a href="https://www.plataformadetransparencia.org.mx/" target="_blank"><img
+              src="../../assets/footer/denuncias.png" alt="" id="denuncias" /></a>
+        </div>
+        <div class="footer-text text-center">
+          <img src="../../assets/footer/mapa.png" width="40px" alt="" />
+          <p>
+            Naranjos #101 Col. Bellavista | Guerrero #104, Zona Centro | Río
+            Madonte S/N Blvd. | Rinconada San Pedro #420, Col. Rinconada San Pedro
+          </p>
+        </div>
+        <div class="footer-num">
+          <div class="info tel">
+            <img src="../../assets/footer/tel.png" class="mx-2" alt="" />
+            <p>464-64-80207</p>
+          </div>
+          <div class="info aquatel">
+            <img src="../../assets/footer/aquatel.png" class="mx-2" alt="" />
+            <p>AQUATEL 073</p>
+          </div>
+        </div>
+        <div class="footer-banner"></div>
+    </footer>
+
+
+    <!-- REDES SOCIALES LATERAL - PANTALLA GRANDE -->
+    <div class="container-redes-sociales z-3">
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/PorAmorAlAguaTodosUnidos" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/CMAPASsalamanca" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/cmapas_salamanca/?hl=es" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@cmapas.salamanca?_t=8aX54CcBVMj&_r=1" target="_blank"><i
+                    class="bi bi-tiktok"></i></a>
+        </div>
+    </div>
+
+    <!-- REDES SOCIALES LATERAL - DISPOSITIVOS MOVILES -->
+    <div class="container-redes z-3">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.facebook.com/PorAmorAlAguaTodosUnidos" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/CMAPASsalamanca" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/cmapas_salamanca/?hl=es" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@cmapas.salamanca?_t=8aX54CcBVMj&_r=1" target="_blank"><i
+                    class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="bi bi-plus"></label>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>
