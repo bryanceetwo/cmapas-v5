@@ -5,484 +5,523 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TITULO DE LA VENTANA -->
   <title>Transparencia | CMAPAS</title>
+  <!-- LINK A BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../../../../css/style.css" />
-  <link rel="stylesheet" href="../../../../css/transparencia.css" />
-
-  <link rel="icon" href="../../../../assets/LOGO-CMAPAS.png">
-  <!-- ICONOS  -->
+  <!-- ICONOS BOOTSTRAP  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <!-- FUENTE -->
+  <!-- DISEÑO DE LA PÁGINA -->
+  <link rel="stylesheet" href="../../../css/style.css" />
+  <link rel="stylesheet" href="../../../css/transparencia.css" />
+  <!-- ICONO DE LA VENTANA -->
+  <link rel="icon" href="../../../assets/LOGO-CMAPAS.png">
+  <!-- FUENTE DE TEXTO -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-
-
 </head>
 
 <body>
-   <!-- NAV -->
-   <a class="navbar-brand logo-navbar w-100" id="logo-desk" href="../../../../"><img src="../../../../assets/LOGO-CMAPAS.png" class="d-block m-auto pt-3" id="logo-navbar"></a>
-   <a class="fixed-top" style="visibility: hidden;" id="logo-scroll" href="../../../../"><img src="../../../../assets/LOGO-CMAPAS.png" style="width: 60px;"></a>
-   <nav class="navbar sticky-top navbar-cmapas">
-     <div class="container-fluid" id="container-nav">
-       <a class="navbar-brand logo-navbar" id="aparecer" href="../../../../"><img src="../../../../assets/LOGO-CMAPAS.png" id="logo-navbar"></a>
-       <div class="navbar-desktop">
-         <ul class="navbar-nav navbar-desktop-items">
-           <li class="nav-item">
-             <a class="nav-link" aria-current="page" href="../../../../"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-               <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
-             </svg>Inicio</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="../../quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-               <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
-             </svg>¿Quiénes Somos?</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link active" href="../../servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-            </svg>Servicios</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="../../obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                 fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
-                 <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
-     9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
-     5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
-     7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
-     1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
-     0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
-     1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
-               </svg>Obras</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="../../contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-               <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-             </svg>Contacto</a>
-           </li>
-         </ul>
-       </div>
- 
-       <button class="navbar-toggler boton-navbar" type="button" data-bs-toggle="offcanvas"
-         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
- 
-       <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
-         aria-labelledby="offcanvasDarkNavbarLabel">
-         <div class="offcanvas-header">
-           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="../../../../assets/LOGO-CMAPAS.png"
-               id="logo-navbar"></h5>
-           <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-             aria-label="Close"></button>
-         </div>
-         <div class="offcanvas-body">
-           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-             <li class="nav-item">
-               <a class="nav-link" aria-current="page" href="../../../../"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                 <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
-               </svg>Inicio</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="../../quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                 <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
-               </svg>¿Quiénes somos?</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link active" href="../../servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+  <!-- LOGO CMAPAS (EN CASO DE ESCRITORIO) -->
+  <a class="navbar-brand logo-navbar w-100" id="logo-desk" href="../../../"><img src="../../../assets/LOGO-CMAPAS.png"
+      class="d-block m-auto pt-3" id="logo-navbar"></a>
+  <!-- LOGO CMAPAS (CUANDO SE USA SCROLL DENTRO DE LA PÁGINA) -->
+  <a class="fixed-top" style="visibility: hidden;" id="logo-scroll" href="../../../"><img
+      src="../../../assets/LOGO-CMAPAS.png" style="width: 60px;"></a>
+  <!-- NAV -->
+  <nav class="navbar sticky-top navbar-cmapas">
+    <div class="container-fluid" id="container-nav">
+      <!-- LOGO CMAPAS (EN CASO DE DISPOSITIVO MÓVIL) -->
+      <a class="navbar-brand logo-navbar" id="aparecer" href="../../../"><img
+          src="../../../assets/LOGO-CMAPAS.png" id="logo-navbar"></a>
+      <!-- BARRA DE NAVEGACIÓN (EN ESCRITORIO) -->
+      <div class="navbar-desktop">
+        <ul class="navbar-nav navbar-desktop-items">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../../"><svg xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                <path
+                  d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+              </svg>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+              </svg>¿Quiénes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../../servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                <path
+                  d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
               </svg>Servicios</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="../../obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                 fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
-                 <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
      9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
      5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
      7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
      1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
      0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
      1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
-               </svg>Obras</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="../../contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-               </svg>Contacto</a>
-             </li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </nav>
+              </svg>Obras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg>Contacto</a>
+          </li>
+        </ul>
+      </div>
 
-    <div id="carouselquienessomos" class="carousel slide carousel-container">
-      <div class="carousel-inner" id="carousel-container-imgs">
-        <div class="carousel-item active" id="carousel-img">
-          <img src="../../../../assets/transparencia/banner.jpg" class="d-block w-auto m-auto" alt="...">
+      <!-- ICONO PARA ABRIR EL MENÚ EN DISPOSITIVOS -->
+      <button class="navbar-toggler boton-navbar" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- BARRA DE NAVEGACIÓN (EN MÓVILES) -->
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><a href="../../../"><img src="../../../assets/LOGO-CMAPAS.png"
+              id="logo-navbar"></h5></a>
+          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                </svg>Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../quienes-somos/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                </svg>¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../../servicios/"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                  height="20" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                </svg>Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../obras/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                  <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 
+     9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 
+     5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 
+     7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 
+     1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 
+     0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 
+     1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z" />
+                </svg>Obras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../contacto/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </nav>
+  <!-- CAROUSEL -->
+  <div id="carouselquienessomos" class="carousel slide carousel-container">
+    <div class="carousel-inner" id="carousel-container-imgs">
+      <!-- IMAGEN (PARA AGREGAR MÁS, COPIAR CONTENEDOR SIGUIENTE Y PEGAR, CAMBIAR UBICACIÓN DE IMAGEN) -->
+      <div class="carousel-item active" id="carousel-img">
+        <img src="../../../assets/transparencia/banner.jpg" class="d-block w-auto m-auto" alt="...">
+      </div>
+    </div>
+  </div>
 
   <h1 class="text-center">TRANSPARENCIA</h1>
 
+  <!-- ICONOS (CUADROS SEGÚN LA TRANSPARENCIA) -->
   <div class="container container-iconos">
     <div class="row gy-4 gx-4 mb-4">
       <a class="card" data-bs-toggle="mensaje"
         title="Leyes, Reglamentos, Decretos Administrativos, Circulares y Normas Aplicables"
-        href="../../../../assets/transparencia/archivos/1a3.xlsx">
-        <img src="../../../../assets/transparencia/img/leyes.png" alt="...">
-        <div class="card-body" >
-          <h6 class="card-footer text-center card-text-trans">Leyes, Reglamentos, Decretos Administrativos, Circulares y Normas Aplicables</h6>
+        href="../../../assets/transparencia/archivos/1a3.xlsx">
+        <img src="../../../assets/transparencia/img/leyes.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Leyes, Reglamentos, Decretos Administrativos, Circulares y
+            Normas Aplicables</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Organigrama General"
-        href="../../../../assets/transparencia/archivos/2a3.xlsx">
-        <img src="../../../../assets/transparencia/img/organigrama.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/2a3.xlsx">
+        <img src="../../../assets/transparencia/img/organigrama.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Organigrama General</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Facultades de cada área"
-        href="../../../../assets/transparencia/archivos/3a3.xlsx">
-        <img src="../../../../assets/transparencia/img/facultad.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/3a3.xlsx">
+        <img src="../../../assets/transparencia/img/facultad.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Facultades de cada área</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Metas y Objetivos"
-        href="../../../../assets/transparencia/archivos/4a3.xlsx">
-        <img src="../../../../assets/transparencia/img/meta.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/4a3.xlsx">
+        <img src="../../../assets/transparencia/img/meta.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Metas y Objetivos</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Indicadores de Temas interés Público"
-        href="../../../../assets/transparencia/archivos/5a3.xls">
-        <img src="../../../../assets/transparencia/img/indicadores.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/5a3.xls">
+        <img src="../../../assets/transparencia/img/indicadores.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Indicadores de Temas Interés Público</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Indicadores de Gestión Metas y Objetivos de los Programas"
-        href="../../../../assets/transparencia/archivos/6a3.xlsx">
-        <img src="../../../../assets/transparencia/img/indicadores-gestion.png" alt="...">
-        <div class="card-body" >
-          <h6 class="card-footer text-center card-text-trans">Indicadores de Gestión Metas y Objetivos de los Programas</h6>
+        href="../../../assets/transparencia/archivos/6a3.xlsx">
+        <img src="../../../assets/transparencia/img/indicadores-gestion.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Indicadores de Gestión Metas y Objetivos de los Programas
+          </h6>
         </div>
       </a>
-      <a class="card" data-bs-toggle="mensaje" title="Directorio" href="../../../../assets/transparencia/archivos/7a3.xlsx">
-        <img src="../../../../assets/transparencia/img/directorio.png" alt="...">
-        <div class="card-body" >
+      <a class="card" data-bs-toggle="mensaje" title="Directorio"
+        href="../../../assets/transparencia/archivos/7a3.xlsx">
+        <img src="../../../assets/transparencia/img/directorio.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Directorio</h6>
         </div>
       </a>
-      <a class="card" data-bs-toggle="mensaje" title="Tabulador" href="../../../../assets/transparencia/archivos/8a3.xlsx">
-        <img src="../../../../assets/transparencia/img/tabulador.png" alt="...">
-        <div class="card-body" >
+      <a class="card" data-bs-toggle="mensaje" title="Tabulador"
+        href="../../../assets/transparencia/archivos/8a3.xlsx">
+        <img src="../../../assets/transparencia/img/tabulador.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Tabulador</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Gastos de Representación"
-        href="../../../../assets/transparencia/archivos/9a3.xlsx">
-        <img src="../../../../assets/transparencia/img/gastos.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/9a3.xlsx">
+        <img src="../../../assets/transparencia/img/gastos.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Gastos de Representación</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Plazas y Vacantes"
-        href="../../../../assets/transparencia/archivos/10a3.xlsx">
-        <img src="../../../../assets/transparencia/img/vacante.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/10a3.xlsx">
+        <img src="../../../assets/transparencia/img/vacante.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Plazas y Vacantes</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Contrataciones y Honorarios"
-        href="../../../../assets/transparencia/archivos/11a2.xlsx">
-        <img src="../../../../assets/transparencia/img/contrataciones.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/11a2.xlsx">
+        <img src="../../../assets/transparencia/img/contrataciones.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Contrataciones y Honorarios</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Declaraciones Patrimoniales"
-        href="../../../../assets/transparencia/archivos/12a3.xlsx">
-        <img src="../../../../assets/transparencia/img/declaraciones.png" alt="...">
-        <div class="card-body" >
+        href="../../../assets/transparencia/archivos/12a3.xlsx">
+        <img src="../../../assets/transparencia/img/declaraciones.png" alt="...">
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Declaraciones Patrimoniales</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Unidad de Acceso"
-      href="../../../../assets/transparencia/archivos/13a3.xlsx">
-      <img src="../../../../assets/transparencia/img/unidad.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Unidad de Acceso</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Convocatorias a Cargos Públicos"
-      href="../../../../assets/transparencia/archivos/14a3.xlsx">
-      <img src="../../../../assets/transparencia/img/convocatorias.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Convocatorias a Cargos Públicos</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje"
-      title="Montos Asignadas y Criterios de Acceso a los Programas de Subsidio"
-      href="../../../../assets/transparencia/archivos/15a3.xlsx">
-      <img src="../../../../assets/transparencia/img/montos.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Montos Asignadas y Criterios de Acceso a los Programas de Subsidio</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Condiciones Generales de Trabajo"
-      href="../../../../assets/transparencia/archivos/16a2.xlsx">
-      <img src="../../../../assets/transparencia/img/condiciones.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Condiciones Generales de Trabajo</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Información Currícular"
-      href="../../../../assets/transparencia/archivos/17a3.xlsx">
-      <img src="../../../assets/transparencia/img/informacion-curricular.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Información Currícular</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Sanciones Administrativas"
-      href="../../../assets/transparencia/archivos/18a3.xlsx">
-      <img src="../../../assets/transparencia/img/sanciones.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Sanciones Administrativas</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Servicios" href="../../../assets/transparencia/archivos/19a3.xlsx">
-      <img src="../../../assets/transparencia/img/servicios.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Servicios</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Trámites" href="../../../assets/transparencia/archivos/20a3.xlsx">
-      <img src="../../../assets/transparencia/img/tramites.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Trámites</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Informe de Presupuesto"
-      href="../../../assets/transparencia/archivos/21a3.xlsx">
-      <img src="../../../assets/transparencia/img/informe-presupuesto.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Informe de Presupuesto</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Deuda Pública"
-      href="../../../assets/transparencia/archivos/22a3.xlsx">
-      <img src="../../../assets/transparencia/img/deuda.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Deuda Pública</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Gastos de Comunicación Social y Publicidad"
-      href="../../../assets/transparencia/archivos/23a3.xls">
-      <img src="../../../assets/transparencia/img/gastos-comunicacion-social.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Gastos de Comunicación Social y Publicidad</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Resultados Finales de Auditorias"
-      href="../../../assets/transparencia/archivos/24a3.xls">
-      <img src="../../../assets/transparencia/img/resultados.png " alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Resultados Finales de Auditorias</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Dictaminación de Estados Financieros"
+        href="../../../assets/transparencia/archivos/13a3.xlsx">
+        <img src="../../../assets/transparencia/img/unidad.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Unidad de Acceso</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Convocatorias a Cargos Públicos"
+        href="../../../assets/transparencia/archivos/14a3.xlsx">
+        <img src="../../../assets/transparencia/img/convocatorias.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Convocatorias a Cargos Públicos</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje"
+        title="Montos Asignadas y Criterios de Acceso a los Programas de Subsidio"
+        href="../../../assets/transparencia/archivos/15a3.xlsx">
+        <img src="../../../assets/transparencia/img/montos.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Montos Asignadas y Criterios de Acceso a los Programas de
+            Subsidio</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Condiciones Generales de Trabajo"
+        href="../../../assets/transparencia/archivos/16a2.xlsx">
+        <img src="../../../assets/transparencia/img/condiciones.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Condiciones Generales de Trabajo</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Información Currícular"
+        href="../../../assets/transparencia/archivos/17a3.xlsx">
+        <img src="../../../assets/transparencia/img/informacion-curricular.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Información Currícular</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Sanciones Administrativas"
+        href="../../../assets/transparencia/archivos/18a3.xlsx">
+        <img src="../../../assets/transparencia/img/sanciones.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Sanciones Administrativas</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Servicios"
+        href="../../../assets/transparencia/archivos/19a3.xlsx">
+        <img src="../../../assets/transparencia/img/servicios.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Servicios</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Trámites" href="../../../assets/transparencia/archivos/20a3.xlsx">
+        <img src="../../../assets/transparencia/img/tramites.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Trámites</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Informe de Presupuesto"
+        href="../../../assets/transparencia/archivos/21a3.xlsx">
+        <img src="../../../assets/transparencia/img/informe-presupuesto.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Informe de Presupuesto</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Deuda Pública"
+        href="../../../assets/transparencia/archivos/22a3.xlsx">
+        <img src="../../../assets/transparencia/img/deuda.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Deuda Pública</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Gastos de Comunicación Social y Publicidad"
+        href="../../../assets/transparencia/archivos/23a3.xls">
+        <img src="../../../assets/transparencia/img/gastos-comunicacion-social.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Gastos de Comunicación Social y Publicidad</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Resultados Finales de Auditorias"
+        href="../../../assets/transparencia/archivos/24a3.xls">
+        <img src="../../../assets/transparencia/img/resultados.png " alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Resultados Finales de Auditorias</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Dictaminación de Estados Financieros"
         href="../../../assets/transparencia/archivos/25a3.xlsx">
         <img src="../../../assets/transparencia/img/dictaminacion.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Dictaminación de Estados Financieros</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Destinatarios y Uso Autorizado e Informes de Recursos Públicos"
         href="../../../assets/transparencia/archivos/26a3.xlsx">
         <img src="../../../assets/transparencia/img/destinatarios.png" alt="...">
-        <div class="card-body" >
-          <h6 class="card-footer text-center card-text-trans">Destinatarios y Uso Autorizado e Informes de Recursos Públicos</h6>
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Destinatarios y Uso Autorizado e Informes de Recursos
+            Públicos</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Contratos y Convenios"
         href="../../../assets/transparencia/archivos/27a3.xlsx">
         <img src="../../../assets/transparencia/img/contrato-convenios.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Contratos y Convenios</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Licitaciones y Adjudicaciones Directas"
         href="../../../assets/transparencia/archivos/28a3.xlsx">
         <img src="../../../assets/transparencia/img/licitaciones.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Licitaciones y Adjudicaciones Directas</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Informes" href="../../../assets/transparencia/archivos/29a3.xlsx">
         <img src="../../../assets/transparencia/img/informes.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Informes</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Estadísticas"
         href="../../../assets/transparencia/archivos/30a3.xlsx">
         <img src="../../../assets/transparencia/img/estadisticas.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Estadísticas</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Avances Presupuestales"
-      href="../../../assets/transparencia/archivos/31a3.xlsx">
-      <img src="../../../assets/transparencia/img/avances-presupuestales.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Avances Presupuestales</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Proveedores y Contratistas"
-      href="../../../assets/transparencia/archivos/32a3.xlsx">
-      <img src="../../../assets/transparencia/img/proveedores-contratistas.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Proveedores y Contratistas</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Convenios con Sector social y Privado"
-      href="../../../assets/transparencia/archivos/33a3.xls">
-      <img src="../../../assets/transparencia/img/convenio-sector-privado.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Convenios con Sector Social y Privado</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Padrón Inmobilario y Mobilario"
-      href="../../../assets/transparencia/archivos/34a3.xlsx">
-      <img src="../../../assets/transparencia/img/padron-inmobilario.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Padrón Inmobilario y Mobilario</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Recomendaciones Derechos Humanos"
-      href="../../../assets/transparencia/archivos/35a3.xls">
-      <img src="../../../assets/transparencia/img/recomendaciones-derechos.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans" style="width: 120px;">Recomendaciones Derechos Humanos</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Resoluciones y Laudos"
-      href="../../../assets/transparencia/archivos/36a3.xlsx">
-      <img src="../../../assets/transparencia/img/resoluciones-laudos.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Resoluciones y Laudos</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Participación ciudadana"
+        href="../../../assets/transparencia/archivos/31a3.xlsx">
+        <img src="../../../assets/transparencia/img/avances-presupuestales.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Avances Presupuestales</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Proveedores y Contratistas"
+        href="../../../assets/transparencia/archivos/32a3.xlsx">
+        <img src="../../../assets/transparencia/img/proveedores-contratistas.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Proveedores y Contratistas</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Convenios con Sector social y Privado"
+        href="../../../assets/transparencia/archivos/33a3.xls">
+        <img src="../../../assets/transparencia/img/convenio-sector-privado.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Convenios con Sector Social y Privado</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Padrón Inmobilario y Mobilario"
+        href="../../../assets/transparencia/archivos/34a3.xlsx">
+        <img src="../../../assets/transparencia/img/padron-inmobilario.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Padrón Inmobilario y Mobilario</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Recomendaciones Derechos Humanos"
+        href="../../../assets/transparencia/archivos/35a3.xls">
+        <img src="../../../assets/transparencia/img/recomendaciones-derechos.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans" style="width: 120px;">Recomendaciones Derechos Humanos
+          </h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Resoluciones y Laudos"
+        href="../../../assets/transparencia/archivos/36a3.xlsx">
+        <img src="../../../assets/transparencia/img/resoluciones-laudos.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Resoluciones y Laudos</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Participación ciudadana"
         href="../../../assets/transparencia/archivos/37a3.xlsx">
         <img src="../../../assets/transparencia/img/participacion-ciudadana.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Participación ciudadana</h6>
         </div>
       </a>
-      <a class="card" data-bs-toggle="mensaje" title="Programas" href="../../../assets/transparencia/archivos/38a3.xlsx">
+      <a class="card" data-bs-toggle="mensaje" title="Programas"
+        href="../../../assets/transparencia/archivos/38a3.xlsx">
         <img src="../../../assets/transparencia/img/programas.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Programas</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Actas y Resoluciones del Comité de Transparencia"
         href="../../../assets/transparencia/archivos/39a3.xlsx">
         <img src="../../../assets/transparencia/img/actas-resoluciones.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Actas y Resoluciones del Comité de Transparencia</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Evaluaciones y Encuestas"
         href="../../../assets/transparencia/archivos/40a3.xlsx">
         <img src="../../../assets/transparencia/img/evaluaciones-encuestas.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Evaluaciones y Encuestas</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Estudios" href="../../../assets/transparencia/archivos/41a3.xlsx">
         <img src="../../../assets/transparencia/img/estudios.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Estudios</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Jubilados y Pensionados"
         href="../../../assets/transparencia/archivos/42a2.xlsx">
         <img src="../../../assets/transparencia/img/jubilados-pensionados.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Jubilados y Pensionados</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Ingresos Recibidos"
         href="../../../assets/transparencia/archivos/43a3.xlsx">
         <img src="../../../assets/transparencia/img/ingresos-recibidos.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Ingresos Recibidos</h6>
         </div>
       </a>
-      <a class="card" data-bs-toggle="mensaje" title="Donaciones" href="../../../assets/transparencia/archivos/44a3.xlsx">
+      <a class="card" data-bs-toggle="mensaje" title="Donaciones"
+        href="../../../assets/transparencia/archivos/44a3.xlsx">
         <img src="../../../assets/transparencia/img/donaciones.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Donaciones</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Instrumentos de Control Archivistico"
         href="../../../assets/transparencia/archivos/45a3.xlsx">
         <img src="../../../assets/transparencia/img/instrumentos.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Instrumentos de Control Archivistico</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Actas de Sesiones"
         href="../../../assets/transparencia/archivos/46a3.xls">
         <img src="../../../assets/transparencia/img/actas-sesiones.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Actas de Sesiones</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Listado de Soluciones de Telecomunicaciones"
         href="../../../assets/transparencia/archivos/">
         <img src="../../../assets/transparencia/img/listado-soluciones.png" alt="...">
-        <div class="card-body" >
-          <h6 class="card-footer text-center card-text-trans" style="width: 120px;">Listado de Soluciones de Telecomunicaciones</h6>
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans" style="width: 120px;">Listado de Soluciones de
+            Telecomunicaciones</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Otra Información"
         href="../../../assets/transparencia/archivos/48a3.xlsx">
         <img src="../../../assets/transparencia/img/otra-informacion.png" alt="...">
-        <div class="card-body" >
+        <div class="card-body">
           <h6 class="card-footer text-center card-text-trans">Otra Información</h6>
         </div>
       </a>
       <a class="card" data-bs-toggle="mensaje" title="Solicitudes de Acceso y sus Respuestas"
-      href="../../../assets/transparencia/archivos/49a3.xlsx">
-      <img src="../../../assets/transparencia/img/solicitudes-acceso.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Solicitudes de Acceso y sus Respuestas</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Otra Información Relacionada"
-      href="../../../assets/transparencia/archivos/50a3.xlsx">
-      <img src="../../../assets/transparencia/img/otra-informacion-relacionada.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Otra Información Relacionada</h6>
-      </div>
-    </a>
-    <a class="card" data-bs-toggle="mensaje" title="Índice de Expedientes Clasificados"
-      href="../../../assets/transparencia/archivos/69a3.xlsx">
-      <img src="../../../assets/transparencia/img/indice-expedientes.png" alt="...">
-      <div class="card-body" >
-        <h6 class="card-footer text-center card-text-trans">Indice de Expedientes Clasificados</h6>
-      </div>
-    </a>
+        href="../../../assets/transparencia/archivos/49a3.xlsx">
+        <img src="../../../assets/transparencia/img/solicitudes-acceso.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Solicitudes de Acceso y sus Respuestas</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Otra Información Relacionada"
+        href="../../../assets/transparencia/archivos/50a3.xlsx">
+        <img src="../../../assets/transparencia/img/otra-informacion-relacionada.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Otra Información Relacionada</h6>
+        </div>
+      </a>
+      <a class="card" data-bs-toggle="mensaje" title="Índice de Expedientes Clasificados"
+        href="../../../assets/transparencia/archivos/69a3.xlsx">
+        <img src="../../../assets/transparencia/img/indice-expedientes.png" alt="...">
+        <div class="card-body">
+          <h6 class="card-footer text-center card-text-trans">Indice de Expedientes Clasificados</h6>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -630,28 +669,31 @@
     </div>
   </div>
 
-    <!-- OPCIONES MENU LATERAL DERECHO  (SOLO FLECHA ) -->
-    <div class="container-menu-lateral-resp z-3" id="container-menu-lateral">
-      <div class="menu-lateral-row">
-        <button class="btn mb-3" id="buttonMenuLateralResp" onclick="aparecer()" href=""><i
-            class="bi bi-caret-left-fill"></i></button>
-      </div>
+  <!-- OPCIONES MENU LATERAL DERECHO  (SOLO FLECHA ) -->
+  <div class="container-menu-lateral-resp z-3" id="container-menu-lateral">
+    <div class="menu-lateral-row">
+      <button class="btn mb-3" id="buttonMenuLateralResp" onclick="aparecer()" href=""><i
+          class="bi bi-caret-left-fill"></i></button>
     </div>
-  
-    <!-- OPCIONES MENU LATERAL DERECHO  ( AMPLIADO ) -->
-    <div class="container-menu-lateral-ampliado z-3" id="container-menu-lateral-ampliado">
-      <div class="menu-lateral-resp">
-        <button class="btn mb-3" id="buttonMenuLateral" onclick="desaparecer()" href="">
-          <i class="bi bi-caret-right-fill"></i>
-        </button>
-        <a class="btn mb-3" id="buttonMenuLateral" href="../requisitos-tramites/">REQUISITOS Y TRÁMITES</a>
-        <a class="btn mb-3" id="buttonMenuLateral" href="http://www.cmapas.gob.mx/portal/assets/ley-de-ingresos-para-el-municipio-de-salamanca%2c-guanajuato%2c-para-el-ejercicio-fiscal-del-a%c3%b1o-2022.pdf" target="_blank">CUOTAS Y TARIFAS</a>
-        <a class="btn mb-3" id="buttonMenuLateral" href="http://www.cmapas.gob.mx/portal/sistema-informacion/" target="_blank">PAGOS EN LÍNEA</a>
-        <a class="btn mb-3" id="sombreado" href="../">REGRESAR</a>
-        <a class="btn mb-3" id="buttonMenuLateral" href="../aportacion/">APORTACION VOLUNTARIA</a>
-      </div>
+  </div>
+
+  <!-- OPCIONES MENU LATERAL DERECHO  ( AMPLIADO ) -->
+  <div class="container-menu-lateral-ampliado z-3" id="container-menu-lateral-ampliado">
+    <div class="menu-lateral-resp">
+      <button class="btn mb-3" id="buttonMenuLateral" onclick="desaparecer()" href="">
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+      <a class="btn mb-3" id="buttonMenuLateral" href="../requisitos-tramites/">REQUISITOS Y TRÁMITES</a>
+      <a class="btn mb-3" id="buttonMenuLateral"
+        href="http://www.cmapas.gob.mx/portal/assets/ley-de-ingresos-para-el-municipio-de-salamanca%2c-guanajuato%2c-para-el-ejercicio-fiscal-del-a%c3%b1o-2022.pdf"
+        target="_blank">CUOTAS Y TARIFAS</a>
+      <a class="btn mb-3" id="buttonMenuLateral" href="http://www.cmapas.gob.mx/portal/sistema-informacion/"
+        target="_blank">PAGOS EN LÍNEA</a>
+      <a class="btn mb-3" id="sombreado" href="../">REGRESAR</a>
+      <a class="btn mb-3" id="buttonMenuLateral" href="../aportacion/">APORTACION VOLUNTARIA</a>
     </div>
-  
+  </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

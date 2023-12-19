@@ -201,7 +201,8 @@
   
   </div>
 
-<form action="https://formsubmit.co/informatica@cmapas.gob.mx" method="POST" class="contenedor-form">
+<!-- FORMULARIO CONTACTO -->
+<form action="../../php/procesar_formulario.php" method="POST" class="contenedor-form">
   <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
     <input type="text" class="form-control" name="Nombre" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1" required>
@@ -214,11 +215,34 @@
 
   <div class="input-group mb-3">
     <span class="input-group-text" id="basic-addon1"><i class="bi bi-tag-fill"></i></span>
-    <input type="text" class="form-control" name="Asunto" placeholder="Asunto" aria-label="Asunto" aria-describedby="basic-addon1" required>
-  </div>
+    <?php
+        require("../../php/conexion.php");
+        $conexion = ConectarDB();
+
+        $sql = "SELECT * FROM servicios";
+        $result = mysqli_query($conexion, $sql);
+        echo '<select type="text" class="form-control" name="Asunto" placeholder="Asunto" aria-label="Asunto" aria-describedby="basic-addon1" required>';
+
+        echo '<option value="">Seleccionar asunto...</option>';
+
+
+        if (mysqli_num_rows($result) > 0) {
+            
+            while ($mostrar = mysqli_fetch_array($result)) {
+                echo '<option value="' . $mostrar[0] . '">' . $mostrar[1] . '</option>';
+            }
+
+            echo '</select>';
+        } else {
+            echo '<p>No hay servicios disponibles.</p>';
+        }
+
+        mysqli_close($conexion);
+    ?>
+</div>
 
   <div class="form-floating">
-    <textarea class="form-control" required name="Comentario" placeholder="Comenta aqu�" id="floatingTextarea2" style="height: 100px"></textarea>
+    <textarea class="form-control" required name="Comentario" maxlength="255" placeholder="Comenta aqu�" id="floatingTextarea2" style="height: 100px"></textarea>
     <label for="floatingTextarea2">Comentarios</label>
   </div>
   <div class="boton-enviar">
@@ -228,6 +252,36 @@
 <input type="hidden" name="_next" value="http://www.cmapas.gob.mx/oficial/pages/contacto/">
   <input type="hidden" name="_captcha" value="false">
 </form>
+<?php
+if (isset($_GET['success']) && $_GET['success'] == 'true') {
+  echo '<div id="liveAlertPlaceholder"></div>';
+  echo '<script>
+          document.addEventListener("DOMContentLoaded", function () {
+              // Mostrar alerta de Bootstrap al cargar la página
+              showAlert("¡El formulario se envió exitosamente!", "success");
+          });
+
+          // Función para mostrar alerta de Bootstrap
+          function showAlert(message, type) {
+              var alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+
+              var alertHTML = \'<div class="alert alert-\' + type + \' alert-dismissible fade show position-fixed top-50 start-50 translate-middle z-3" role="alert">\' +
+                              message +
+                              \'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>\';
+
+              alertPlaceholder.innerHTML = alertHTML;
+
+              // Ocultar la alerta después de 10 segundos
+              setTimeout(function() {
+                  alertPlaceholder.innerHTML = \'\';
+              }, 5000);
+          }
+
+          // Después de mostrar la alerta, limpia la URL para que no vuelva a mostrarse en recargas
+          window.history.replaceState({}, document.title, window.location.pathname);
+        </script>';
+}
+?>
 
 </div>
 
